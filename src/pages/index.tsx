@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
+import NextLink from "next/link";
 import { useEffect } from "react";
 import {
   Box,
@@ -8,102 +9,21 @@ import {
   Text,
   HStack,
   Divider,
-  Link,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
-
-import NextLink from "next/link";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper";
 import { Header } from "../components/header";
 
-import { createServer, Model } from "miragejs";
 import { SwiperElement } from "../components/Swiper/Index";
 
-createServer({
-  models: {
-    continents: Model,
-  },
+import { continentType, continentsPrev } from "../types";
 
-  seeds(server) {
-    server.db.loadData({
-      continents: [
-        {
-          name: "Europa",
-          prev: "o continente mais antigo",
-          paises_qtd: "35",
-          linguas_qtd: "4",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-        {
-          name: "America do sul",
-          prev: "Apresenta paisagens naturais muito diversas.",
-          paises_qtd: "12",
-          linguas_qtd: "4",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-        {
-          name: "América do Norte",
-          prev: "possui grandes cordilheiras e Montanhas Rochosas.",
-          paises_qtd: "35",
-          linguas_qtd: "25",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-        {
-          name: "Africa",
-          prev: "continente de maior biodiversidade do mundo",
-          paises_qtd: "35",
-          linguas_qtd: "25",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-        {
-          name: "Oceania",
-          prev: "vários grupos de ilhas do oceano Pacífico.",
-          paises_qtd: "35",
-          linguas_qtd: "25",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-        {
-          name: "Ásia",
-          prev: "multicultural, abrigando diversas culturas.",
-          paises_qtd: "35",
-          linguas_qtd: "25",
-          cidades_qtd: "25",
-          description:
-            "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        },
-      ],
-    });
-  },
-  routes() {
-    this.namespace = "api";
-    this.get("/continents", () => {
-      return this.schema.all("continents");
-    });
-  },
-});
+interface HomeProps {
+  continents: continentsPrev[];
+}
 
-const Home: NextPage = () => {
-  useEffect(() => {
-    fetch("http://localhost:3000/api/continents")
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-  }, []);
+const Home: NextPage<HomeProps> = ({ continents }: HomeProps) => {
   return (
     <Box>
       <Header></Header>
@@ -232,10 +152,26 @@ const Home: NextPage = () => {
         mb="40px"
         bgImage="imgs/ContinentImage.png"
       >
-        <SwiperElement />
+        <SwiperElement continents={continents} />
       </Flex>
     </Box>
   );
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data: continentType[] = await fetch(
+    "http://localhost:3333/continents"
+  ).then((response) => response.json());
+
+  const continentsNames: continentsPrev[] = data.map((item) => {
+    return {
+      name: item.continent,
+      desc: item.descPrev,
+      slug: item.slug,
+    };
+  });
+
+  return { props: { continents: continentsNames } };
+};

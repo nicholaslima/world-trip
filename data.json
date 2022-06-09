@@ -1,0 +1,292 @@
+{
+  "continents": [
+    {
+      "continent": "áfrica",
+      "slug": "africa",
+      "countries_count": "54",
+      "cities_count": "12",
+      "languages_count": "3000",
+      "descPrev": "continente de maior biodiversidade do mundo.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/Screenshot-2019-08-14-at-09.35.43.png",
+      "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "cities": [
+        {
+          "name": "lagos",
+          "country": "nigéria",
+          "flag_url": "https://thumbs.dreamstime.com/b/bandeira-do-papel-de-nig%C3%A9ria-fundo-patri%C3%B3tico-nacional-138242456.jpg",
+          "image_url": "https://s2.glbimg.com/5fCofCwWNR_EcWfL4-wlsHTZPmk=/e.glbimg.com/og/ed/f/original/2020/12/07/stephen-okafor-l2nwtnyn1ug-unsplash.jpg"
+        },
+        {
+          "name": "Kinshasa",
+          "country": "República Democrática do Congo",
+          "flag_url": "https://static.vecteezy.com/ti/vetor-gratis/p3/4757308-bandeira-republica-democratica-do-congo-gr%C3%A1tis-vetor.jpg",
+          "image_url": "https://s2.glbimg.com/wJ8uZVIiULFv8V_pQO5YazAOSRU=/e.glbimg.com/og/ed/f/original/2020/12/07/boulevard_du_30_juin_kinshasa.jpg"
+        },
+        {
+          "name": "Luanda",
+          "country": "Angola",
+          "flag_url": "https://imagepng.org/wp-content/uploads/2017/09/bandeira-angola-4.png",
+          "image_url": "https://s2.glbimg.com/xd1ZnhJfmHZg3GOUppmHAo7sZmU=/e.glbimg.com/og/ed/f/original/2020/12/07/luanda_skyline_-_angola_2015_cropped.jpg"
+        },
+        {
+          "name": "Cidade do Cabo",
+          "country": "África do Sul",
+          "flag_url": "http://geo5.net/imagens/Bandeira-da-Africa-do-Sul.png",
+          "image_url": "https://s2.glbimg.com/BIiYQK_ULMxkgLTXcCqaN7ElelQ=/e.glbimg.com/og/ed/f/original/2020/12/07/marcelo-novais-byzkrzx34p8-unsplash.jpg"
+        },
+        {
+          "name": "Cairo",
+          "country": "egito",
+          "flag_url": "http://geo5.net/imagens/Bandeira-do-Egito.png",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/05/cairo-egito.jpg"
+        },
+        {
+          "name": "Kinshasa",
+          "country": "República Democrática do Congo",
+          "flag_url": "https://static.vecteezy.com/ti/vetor-gratis/p3/4757308-bandeira-republica-democratica-do-congo-gr%C3%A1tis-vetor.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/08/kinshasa-congo.jpg"
+        }
+      ]
+    },
+    {
+      "continent": "ásia",
+      "slug": "asia",
+      "countries_count": "50",
+      "cities_count": "37",
+      "languages_count": "66",
+      "descPrev": "multicultural, abrigando diversas culturas.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/Screenshot-2019-08-14-at-12.45.18.png",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering.",
+      "cities": [
+        {
+          "name": "Tóquio",
+          "country": "Japão",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2016/03/bandeira-japao-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-toquio.jpg"
+        },
+        {
+          "name": "Jakarta",
+          "country": "Indonésia",
+          "flag_url": "https://i.pinimg.com/474x/86/4d/e9/864de95c12e83adeb62e192f72da03d8.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-jakarta.jpg"
+        },
+        {
+          "name": "Nova Delhi",
+          "country": "Índia",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/05/significado-da-bandeira-da-india-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-nova-delhi.jpg"
+        },
+        {
+          "name": "Mumbai",
+          "country": "Índia",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/05/significado-da-bandeira-da-india-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-mumbai.jpg"
+        },
+        {
+          "name": "Seoul",
+          "country": "Coréia do Sul",
+          "flag_url": "http://geo5.net/imagens/bandeira-coreia-do-sul-2000px.png",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-seoul.jpg"
+        },
+        {
+          "name": "Shanghai",
+          "country": "China",
+          "flag_url": "https://static.significados.com.br/foto/china.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/03/maiores-cidades-asia-shangai.jpg"
+        }
+      ]
+    },
+    {
+      "continent": "europa",
+      "slug": "europa",
+      "countries_count": "50",
+      "cities_count": "35",
+      "languages_count": "60",
+      "descPrev": "O continente mais antigo.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/Screenshot-2019-08-13-at-16.38.03.png",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste. A Europa é limitada pelo oceano Glacial Ártico e outros corpos de água no norte, pelo oceano Atlântico a oeste, pelo mar Mediterrâneo ao sul, e pelo mar Negro e por vias navegáveis interligadas ao sudeste. No entanto, as fronteiras para a Europa, um conceito que remonta à Antiguidade clássica, são um tanto arbitrárias, visto que o termo Europa pode referir-se a uma distinção cultural e política ou geográfica.",
+      "cities": [
+        {
+          "name": "Ravena",
+          "country": "Itália",
+          "flag_url": "https://static.significados.com.br/foto/bandeira-italia-0-cke.jpg",
+          "image_url": "https://www.melhoresdestinos.com.br/wp-content/uploads/2020/09/ravena-italia-820x534.jpg"
+        },
+        {
+          "name": "Veneza",
+          "country": "Itália",
+          "flag_url": "https://static.significados.com.br/foto/bandeira-italia-0-cke.jpg",
+          "image_url": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-veneza-capa2019-01-820x430.jpg"
+        },
+        {
+          "name": "Praga",
+          "country": "República Checa",
+          "flag_url": "https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png",
+          "image_url": "https://www.melhoresdestinos.com.br/wp-content/uploads/2017/08/praga-clima-820x585.jpg"
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flag_url": "https://static.todamateria.com.br/upload/fr/an/frana_a.jpg",
+          "image_url": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-01-820x430.jpg"
+        },
+        {
+          "name": "Granada",
+          "country": "Espanha",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/01/significado-e-origem-da-bandeira-da-espanha-1.jpg",
+          "image_url": "https://m7g2b8q3.stackpathcdn.com/wp-content/uploads/2018/11/vista-de-granada-1100x680.jpg"
+        },
+        {
+          "name": "Madri",
+          "country": "Espanha",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/01/significado-e-origem-da-bandeira-da-espanha-1.jpg",
+          "image_url": "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-madri-capa2019-04-820x430.jpg"
+        }
+      ]
+    },
+    {
+      "continent": "america do norte",
+      "slug": "america-do-norte",
+      "countries_count": "4",
+      "cities_count": "26",
+      "languages_count": "6",
+      "descPrev": "possui grandes cordilheiras e Montanhas Rochosas.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/Screenshot-2019-08-12-at-17.38.11.png",
+      "description": "A América do Norte é um subcontinente que compreende a porção setentrional do continente americano. Existem duas formas de classificar esse continente: a primeira considera que a América do Norte é apenas a parte mais setentrional da América, separada da América Central na fronteira entre o México e a Guatemala, a segunda classificação reconhece apenas uma América do Norte e uma América do Sul, traçando o limite no Istmo do Panamá (umas vezes no Canal do Panamá, outras na fronteira entre o Panamá e a Colômbia). Pela última definição, a América do Norte incluiria a América Central Continental e Insular (Caribe).",
+      "cities": [
+        {
+          "name": "Cidade do México",
+          "country": "México",
+          "flag_url": "https://static.significados.com.br/foto/mexico.jpg",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-mexico.jpg"
+        },
+        {
+          "name": "Cancún",
+          "country": "México",
+          "flag_url": "https://static.significados.com.br/foto/mexico.jpg",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-mexico-cancun.jpg"
+        },
+        {
+          "name": "Miami",
+          "country": "Estados Unidos",
+          "flag_url": "https://infographya.com/files/25008b43d004c918268141415187d573.jpg",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-mexico-miami.jpg"
+        },
+        {
+          "name": "Las Vegas",
+          "country": "Estados Unidos",
+          "flag_url": "https://infographya.com/files/25008b43d004c918268141415187d573.jpg",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-mexico-las-vegas.jpg"
+        },
+        {
+          "name": "Toronto",
+          "country": "Estados Unidos",
+          "flag_url": "https://img.freepik.com/vetores-gratis/ilustracao-de-bandeira-canada_53876-27114.jpg?w=2000",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-canada-toronto.jpg"
+        },
+        {
+          "name": "Vancouver",
+          "country": "Estados Unidos",
+          "flag_url": "https://img.freepik.com/vetores-gratis/ilustracao-de-bandeira-canada_53876-27114.jpg?w=2000",
+          "image_url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/07/destino-america-do-norte-canada.jpg"
+        }
+      ]
+    },
+    {
+      "continent": "america do sul",
+      "slug": "america-do-sul",
+      "countries_count": "12",
+      "cities_count": "22",
+      "languages_count": "9",
+      "descPrev": "Apresenta paisagens naturais muito diversas.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/Screenshot-2019-08-12-at-14.31.46.png",
+      "description": "A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano. A sua extensão é de 17 819 100 km², abrangendo 12% da superfície terrestre e 6% da população mundial. Une-se à América Central a norte pelo istmo do Panamá e se separa da Antártida ao sul pelo estreito de Drake. Tem uma extensão de 7 500 km desde o mar do Caribe até ao cabo Horn, ponto extremo sul do continente. Os outros pontos extremos da América do Sul são: ao norte a Punta Gallinas, na Colômbia, ao leste a Ponta do Seixas, no Brasil, e a oeste a Punta Pariñas, no Peru. Seus limites naturais são: ao norte com o mar do Caribe; a leste, nordeste e sudeste com o oceano Atlântico; e a oeste com o oceano Pacífico. O Brasil representa atualmente a metade da população e produto econômico desta região.",
+      "cities": [
+        {
+          "name": "Montevidéu",
+          "country": "uruguai",
+          "flag_url": "http://geo5.net/imagens/2011/06/bandeira-do-uruguai-2000px.png",
+          "image_url": "https://www.buenasdicas.com/wp-content/uploads/2013/10/PLAZA_INDEPENDENCIA_MONTEVIDEU.jpg"
+        },
+        {
+          "name": "Buenos Aires",
+          "country": "argentina",
+          "flag_url": "https://static.significados.com.br/foto/argentina.jpg",
+          "image_url": "https://www.buenasdicas.com/wp-content/uploads/2014/01/pontos-turisticos-buenos-aires-casa-rosada.jpg"
+        },
+        {
+          "name": "Santiago",
+          "country": "chile",
+          "flag_url": "https://static.todamateria.com.br/upload/ba/nd/bandeiradochile-cke.jpg",
+          "image_url": "https://www.buenasdicas.com/wp-content/uploads/2016/06/o-que-fazer-em-santiago-do-chile-640x360.jpg"
+        },
+        {
+          "name": "Machu Picchu",
+          "country": "Peru",
+          "flag_url": "https://www.anuariodoceara.com.br/wp-content/uploads/2017/08/bandeira-do-peru.gif",
+          "image_url": "https://guiaviajarmelhor.com.br/wp-content/uploads/2020/09/america-do-sul-contos-de-fada-1.jpg"
+        },
+        {
+          "name": "San Pedro de Atacama",
+          "country": "Chile",
+          "flag_url": "https://static.todamateria.com.br/upload/ba/nd/bandeiradochile-cke.jpg",
+          "image_url": "https://guiaviajarmelhor.com.br/wp-content/uploads/2020/09/america-do-sul-contos-de-fada-6.jpg"
+        },
+        {
+          "name": "Ouro Preto",
+          "country": "Brasil",
+          "flag_url": "https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg",
+          "image_url": "https://guiaviajarmelhor.com.br/wp-content/uploads/2020/09/Ouro_Preto_Minas_Gerais_Brasil_8.jpg"
+        }
+      ]
+    },
+    {
+      "continent": "oceania",
+      "slug": "oceania",
+      "countries_count": "16",
+      "cities_count": "5",
+      "languages_count": "18",
+      "descPrev": "vários grupos de ilhas do oceano Pacífico.",
+      "image_url": "https://bigseventravel.com/wp-content/uploads/2019/08/ishan-seefromthesky-rj8fMHNPXbg-unsplash.jpg",
+      "description": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes.",
+      "cities": [
+        {
+          "name": "Sydney",
+          "country": "Austrália",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/03/significado-da-bandeira-da-australia-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2017/08/sydney-australia.jpg"
+        },
+        {
+          "name": "Melbourne",
+          "country": "Austrália",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/03/significado-da-bandeira-da-australia-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/07/hosier-lane.jpg"
+        },
+        {
+          "name": "Adelaide",
+          "country": "Austrália",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/03/significado-da-bandeira-da-australia-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2018/06/adelaide-australia-scaled.jpg"
+        },
+        {
+          "name": "Auckland",
+          "country": "Nova Zelândia",
+          "flag_url": "https://http2.mlstatic.com/D_NQ_NP_634549-MLB31057011967_062019-O.jpg",
+          "image_url": "https://s204818.gridserver.com/wp-content/uploads/2016/10/iStock_91700433_MEDIUM-676x507.jpg"
+        },
+        {
+          "name": "Apia",
+          "country": "Samoa",
+          "flag_url": "https://www.estudopratico.com.br/wp-content/uploads/2017/04/significado-da-bandeira-da-samoa-1200x675.jpg",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/07/apia-samoa.jpg"
+        },
+        {
+          "name": "Suva",
+          "country": "Fiji",
+          "flag_url": "https://flagshub.com/images/flag-of-fiji.png",
+          "image_url": "https://www.carpemundi.com.br/wp-content/uploads/2021/07/suva-fiji.jpg"
+        }
+      ]
+    }
+  ]
+}
