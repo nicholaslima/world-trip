@@ -10,7 +10,11 @@ export function Header() {
       align="center"
       justify="center"
     >
-      <Image src="imgs/Logo.png" alt="world trip logotipo" />
+      <Image
+        src="imgs/Logo.png"
+        h={["20px", "30px", "32px", "38px", "40px"]}
+        alt="world trip logotipo"
+      />
     </Flex>
   );
 }
