@@ -1,62 +1,42 @@
 import { Box, HStack, Image, Text } from "@chakra-ui/react";
 
+const list = {
+  night: {
+    title: "vida noturna",
+    img: "imgs/cocktail.png",
+    alt: "cocktail image",
+  },
+  beach: {
+    title: "praia",
+    img: "imgs/surf.png",
+    alt: "surf image",
+  },
+  modern: {
+    title: "moderno",
+    img: "imgs/building.png",
+    alt: "building image",
+  },
+  classic: {
+    title: "clássico",
+    img: "imgs/museum.png",
+    alt: "museum image",
+  },
+  earth: {
+    title: "e mais...",
+    img: "imgs/earth 1.png",
+    alt: "earth image",
+  },
+};
+
 const HomeIcons: React.FC = () => {
   return (
     <HStack spacing="130px" mx="auto" maxWidth="980px" mt="80px" mb="80px">
-      <Box>
-        <Image
-          src="imgs/cocktail.png"
-          h="70px"
-          alt="cocktail image"
-          mx="auto"
-          mb="20px"
-        />
-        <Text fontWeight="semibold">vida noturna</Text>
-      </Box>
-
-      <Box>
-        <Image
-          src="imgs/surf.png"
-          h="70px"
-          alt="surf image"
-          mx="auto"
-          mb="20px"
-        />
-        <Text fontWeight="semibold">praia</Text>
-      </Box>
-
-      <Box>
-        <Image
-          src="imgs/building.png"
-          h="70px"
-          alt="building image"
-          mx="auto"
-          mb="20px"
-        />
-        <Text fontWeight="semibold">moderno</Text>
-      </Box>
-
-      <Box>
-        <Image
-          src="imgs/museum.png"
-          h="70px"
-          alt="museum image"
-          mx="auto"
-          mb="20px"
-        />
-        <Text fontWeight="semibold">classico</Text>
-      </Box>
-
-      <Box>
-        <Image
-          src="imgs/earth 1.png"
-          h="70px"
-          alt="earth image"
-          mx="auto"
-          mb="20px"
-        />
-        <Text fontWeight="semibold">e mais...</Text>
-      </Box>
+      {Object.entries(list).map(([key, value]) => (
+        <Box key={key}>
+          <Image src={value.img} h="70px" alt={value.alt} mx="auto" mb="20px" />
+          <Text fontWeight="semibold">{value.title}</Text>
+        </Box>
+      ))}
     </HStack>
   );
 };

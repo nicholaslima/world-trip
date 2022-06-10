@@ -1,18 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
-import NextLink from "next/link";
-import { useEffect } from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  Text,
-  HStack,
-  Divider,
-  Link as ChakraLink,
-} from "@chakra-ui/react";
 
-import { Pagination, Navigation } from "swiper";
+import { Box, Flex, Heading, Divider } from "@chakra-ui/react";
+
 import { Header } from "../components/header";
 
 import { SwiperElement } from "../components/Swiper/Index";
