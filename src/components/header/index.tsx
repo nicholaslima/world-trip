@@ -6,13 +6,13 @@ export function Header() {
       w="100%"
       maxWidth="980px"
       mx="auto"
-      height="100px"
+      py={["0.6rem", "0.9rem", "1.2rem", "1.7rem"]}
       align="center"
       justify="center"
     >
       <Image
         src="imgs/Logo.png"
-        h={["20px", "30px", "32px", "38px", "40px"]}
+        h={["10px", "22px", "30px", "35px", "40px"]}
         alt="world trip logotipo"
       />
     </Flex>

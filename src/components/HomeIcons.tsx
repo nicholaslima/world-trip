@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 
 const list = {
   night: {
@@ -30,14 +30,38 @@ const list = {
 
 const HomeIcons: React.FC = () => {
   return (
-    <HStack spacing="130px" mx="auto" maxWidth="980px" mt="80px" mb="80px">
+    <Grid
+      templateColumns={["repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]}
+      gap="10px"
+      mx="auto"
+      w="100%"
+      maxWidth={["80%", "80%", "980px"]}
+      mt={["20px", "40px", "60px", "80px"]}
+      mb={["20px", "40px", "60px", "80px"]}
+    >
       {Object.entries(list).map(([key, value]) => (
-        <Box key={key}>
-          <Image src={value.img} h="70px" alt={value.alt} mx="auto" mb="20px" />
-          <Text fontWeight="semibold">{value.title}</Text>
-        </Box>
+        <Flex
+          align="center"
+          justifyContent="space-between"
+          gap={["5px", "7px", "10px", "20px"]}
+          flexDirection="column"
+          key={key}
+        >
+          <Image
+            src={value.img}
+            h={["20px", "30px", "40px", "70px"]}
+            alt={value.alt}
+            mx="auto"
+          />
+          <Text
+            fontWeight="semibold"
+            fontSize={["5px", "10px", "12px", "16px"]}
+          >
+            {value.title}
+          </Text>
+        </Flex>
       ))}
-    </HStack>
+    </Grid>
   );
 };
 
