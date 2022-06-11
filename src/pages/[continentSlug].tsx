@@ -22,14 +22,18 @@ export default function Continent({ continent }: ContinentProps) {
     <>
       <Header />
 
-      <Flex bgSize="cover" h="500px" bgImage={continent.image_url}>
+      <Flex
+        bgSize="cover"
+        h={["200px", "300px", "400px", "500px"]}
+        bgImage={continent.image_url}
+      >
         <Box bg="black" opacity="0.4" w="100%"></Box>
       </Flex>
       <Box maxWidth="980px" mx="auto">
         <Heading
           fontFamily="fonts.body"
           fontWeight="semibold"
-          fontSize="48px"
+          fontSize={["18px", "30px", "40px", "48px"]}
           color="white.normal"
           position="absolute"
           top="480px"
@@ -39,20 +43,29 @@ export default function Continent({ continent }: ContinentProps) {
         </Heading>
       </Box>
 
-      <Box w="100%" maxWidth="1040px" mx="auto" my="80px">
+      <Box
+        w="100%"
+        px="10px"
+        maxWidth={["100%", "1040px"]}
+        mx="auto"
+        my={["20px", "40px", "60px", "80px"]}
+      >
         <ContinentDetails continent={continent} />
 
         <Heading
-          fontSize="36px"
+          fontSize={["16px", "20px", "28px", "36px"]}
           fontFamily="fonts.body"
-          fontWeight="medium"
-          mb="40px"
-          mt="80px"
+          fontWeight={["bold", "medium"]}
+          mb={["10px", "20px", "30px", "40px"]}
+          mt={["20px", "40px", "60px", "80px"]}
         >
           Cidades +100
         </Heading>
 
-        <Grid templateColumns="repeat(4,1fr)" gap="45px">
+        <Grid
+          templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(4,1fr)"]}
+          gap={["15px", "25px", "35px", "45px"]}
+        >
           {continent.cities.map((city, index) => (
             <CityItem key="index" city={city} />
           ))}
