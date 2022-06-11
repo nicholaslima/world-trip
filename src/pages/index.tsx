@@ -49,7 +49,7 @@ const Home: NextPage<HomeProps> = ({ continents }: HomeProps) => {
         maxWidth="980px"
         bgSize="cover"
         w="100%"
-        h={["200px", "380px", "450px"]}
+        h={["200px", "350px", "450px"]}
         mb={["10px", "20px", "30px", "40px"]}
         bgImage="imgs/ContinentImage.png"
       >

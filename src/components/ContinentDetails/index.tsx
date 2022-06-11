@@ -1,6 +1,14 @@
 import { WarningIcon } from "@chakra-ui/icons";
-import { Box, Flex, Heading, HStack, Text, Tooltip } from "@chakra-ui/react";
-
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Icon,
+  Text,
+  Tooltip,
+} from "@chakra-ui/react";
+import { RiErrorWarningLine } from "react-icons/ri";
 import { continentType } from "../../types";
 
 interface ContinentProps {
@@ -10,21 +18,26 @@ const ContinentDetails: React.FC<ContinentProps> = ({
   continent,
 }: ContinentProps) => {
   return (
-    <Flex gap="70px" align="center">
+    <Flex
+      flexDirection={["column", "row"]}
+      justify="space-between"
+      align="center"
+    >
       <Text
-        lineHeight="36px"
-        fontSize="20px"
+        lineHeight={["7px", "10px", "15px", "25px", "36px"]}
+        fontSize={["7px", "10px", "14px", "16px", "20px"]}
         fontWeight="regular"
+        order={[2, 1]}
         textAlign="justify"
       >
         {continent.description}
       </Text>
-      <HStack spacing="70px">
+      <Flex w="100%" justify="space-around" align="center" order={[1, 2]}>
         <Box>
           <Heading
             textAlign="center"
             color="yellow.900"
-            fontSize="34px"
+            fontSize={["10px", "14px", "18px", "25px", "34px"]}
             fontWeight="semibold"
           >
             {continent.countries_count}
@@ -32,7 +45,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Text
             textAlign="center"
             color="gray.dark"
-            fontSize="18px"
+            fontSize={["7px", "14px", "16px", "16px", "18px"]}
             fontWeight="bold"
           >
             Países
@@ -42,7 +55,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Heading
             textAlign="center"
             color="yellow.900"
-            fontSize="34px"
+            fontSize={["10px", "14px", "18px", "25px", "34px"]}
             fontWeight="semibold"
           >
             {continent.languages_count}
@@ -50,7 +63,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Text
             textAlign="center"
             color="gray.dark"
-            fontSize="18px"
+            fontSize={["7px", "14px", "16px", "16px", "18px"]}
             fontWeight="bold"
           >
             Linguas
@@ -60,27 +73,33 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Heading
             textAlign="center"
             color="yellow.900"
-            fontSize="34px"
+            fontSize={["10px", "14px", "18px", "25px", "34px"]}
             fontWeight="semibold"
           >
             {continent.cities_count}
           </Heading>
-          <Flex align="center">
+          <Flex gap="2px" align="center">
             <Text
               textAlign="center"
               color="gray.dark"
-              fontSize="18px"
+              fontSize={["7px", "14px", "16px", "16px", "18px"]}
               fontWeight="bold"
-              w="130px"
             >
               cidades +100
             </Text>
-            <Tooltip label="125 cidades" fontSize="md">
-              <WarningIcon color="yellow.900"></WarningIcon>
+            <Tooltip
+              label={`${continent.cities_count} cidades mais visitadas`}
+              fontSize={["7px", "12px", "14px", "16px"]}
+            >
+              <WarningIcon
+                w="auto"
+                height={["7px", "12px", "14px", "16px"]}
+                color="gray.medium"
+              />
             </Tooltip>
           </Flex>
         </Box>
-      </HStack>
+      </Flex>
     </Flex>
   );
 };
