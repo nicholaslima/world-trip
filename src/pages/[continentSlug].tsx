@@ -24,25 +24,26 @@ export default function Continent({ continent }: ContinentProps) {
 
       <Flex
         bgSize="cover"
-        h={["200px", "300px", "400px", "500px"]}
+        h={["150px", "300px", "400px", "500px"]}
         bgImage={continent.image_url}
       >
         <Box bg="black" opacity="0.4" w="100%"></Box>
       </Flex>
-      <Box maxWidth="980px" mx="auto">
+      <Box maxWidth="980px" mx="auto" px="20px">
         <Heading
           fontFamily="fonts.body"
           fontWeight="semibold"
           fontSize={["18px", "30px", "40px", "48px"]}
           color="white.normal"
+          textTransform="capitalize"
           position="absolute"
-          top="480px"
+          top={["140px", "250px", "350px", "480px"]}
           opacity="1"
+          z-index="10"
         >
           {continent.continent}
         </Heading>
       </Box>
-
       <Box
         w="100%"
         px="10px"

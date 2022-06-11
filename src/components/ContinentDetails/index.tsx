@@ -24,11 +24,13 @@ const ContinentDetails: React.FC<ContinentProps> = ({
       align="center"
     >
       <Text
-        lineHeight={["7px", "10px", "15px", "25px", "36px"]}
+        lineHeight={["14px", "25px", "36px"]}
         fontSize={["7px", "10px", "14px", "16px", "20px"]}
         fontWeight="regular"
+        w="100%"
         order={[2, 1]}
         textAlign="justify"
+        mt={["20px", "0"]}
       >
         {continent.description}
       </Text>
@@ -45,7 +47,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Text
             textAlign="center"
             color="gray.dark"
-            fontSize={["7px", "14px", "16px", "16px", "18px"]}
+            fontSize={["7px", "10px", "12px", "16px", "18px"]}
             fontWeight="bold"
           >
             Países
@@ -63,7 +65,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
           <Text
             textAlign="center"
             color="gray.dark"
-            fontSize={["7px", "14px", "16px", "16px", "18px"]}
+            fontSize={["7px", "10px", "12px", "16px", "18px"]}
             fontWeight="bold"
           >
             Linguas
@@ -82,7 +84,7 @@ const ContinentDetails: React.FC<ContinentProps> = ({
             <Text
               textAlign="center"
               color="gray.dark"
-              fontSize={["7px", "14px", "16px", "16px", "18px"]}
+              fontSize={["7px", "10px", "12px", "16px", "18px"]}
               fontWeight="bold"
             >
               cidades +100
