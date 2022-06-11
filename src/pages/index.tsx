@@ -23,19 +23,20 @@ const Home: NextPage<HomeProps> = ({ continents }: HomeProps) => {
       <HomeIcons />
 
       <Divider
-        w="90px"
-        borderWidth="1px"
+        w={["20%", "20%", "10%", "90px"]}
+        borderWidth={["0.0001rem"]}
         borderColor="gray.dark"
         mx="auto"
       ></Divider>
 
-      <Box mx="auto" maxWidth="980px">
+      <Box mx="auto" maxWidth={["80%", "980px"]}>
         <Heading
-          py="52px"
-          w="550px"
+          py={["10px", "30px", "52px"]}
+          w={["100%", "550px"]}
           mx="auto"
-          lineHeight="54px"
-          fontWeight="medium"
+          lineHeight={["15px", "20px", "30px", "54px"]}
+          fontWeight={["bold", "medium"]}
+          fontSize={["10px", "16px", "20px", "26px", "36px"]}
           textAlign="center"
         >
           Vamos nessa?<br></br>
@@ -48,8 +49,8 @@ const Home: NextPage<HomeProps> = ({ continents }: HomeProps) => {
         maxWidth="980px"
         bgSize="cover"
         w="100%"
-        h="450px"
-        mb="40px"
+        h={["200px", "380px", "450px"]}
+        mb={["10px", "20px", "30px", "40px"]}
         bgImage="imgs/ContinentImage.png"
       >
         <SwiperElement continents={continents} />

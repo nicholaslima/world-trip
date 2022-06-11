@@ -17,10 +17,10 @@ export function SwiperItem({ name, description, slug }: SwiperItemProps) {
       justify="center"
     >
       <NextLink href={`/${slug}`} passHref>
-        <ChakraLink>
+        <ChakraLink _hover={{ textDecoration: "none" }}>
           <Heading
             fontFamily="fonts.body"
-            fontSize="48px"
+            fontSize={["20px", "35px", "45px", "48px"]}
             fontWeight="700"
             color="white.normal"
             textAlign="center"
@@ -31,8 +31,10 @@ export function SwiperItem({ name, description, slug }: SwiperItemProps) {
 
           <Text
             fontFamily="fonts.body"
-            fontSize="24px"
+            fontSize={["10px", "14px", "20px", "20px", "24px"]}
             fontWeight="700"
+            mx="auto"
+            w={["80%", "100%"]}
             color="white.normal"
             textAlign="center"
           >

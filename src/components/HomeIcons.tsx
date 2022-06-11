@@ -31,13 +31,18 @@ const list = {
 const HomeIcons: React.FC = () => {
   return (
     <Grid
-      templateColumns={["repeat(3,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]}
+      templateColumns={[
+        "repeat(2,1fr)",
+        "repeat(3,1fr)",
+        "repeat(3,1fr)",
+        "repeat(5,1fr)",
+      ]}
       gap="10px"
       mx="auto"
       w="100%"
-      maxWidth={["80%", "80%", "980px"]}
+      maxWidth={["40%", "80%", "80%", "980px"]}
       mt={["20px", "40px", "60px", "80px"]}
-      mb={["20px", "40px", "60px", "80px"]}
+      mb={["17px", "30px", "60px", "80px"]}
     >
       {Object.entries(list).map(([key, value]) => (
         <Flex
@@ -49,7 +54,7 @@ const HomeIcons: React.FC = () => {
         >
           <Image
             src={value.img}
-            h={["20px", "30px", "40px", "70px"]}
+            h={["13px", "20px", "40px", "50px", "70px"]}
             alt={value.alt}
             mx="auto"
           />

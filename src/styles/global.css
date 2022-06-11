@@ -18,3 +18,30 @@ span.swiper-pagination-bullet {
 span.swiper-pagination-bullet-active {
   background-color: #ffba08;
 }
+
+@media screen and (max-width: 600px) {
+  div.swiper-button-next {
+    margin-right: 8px;
+    width: 0px;
+  }
+
+  div.swiper-button-prev {
+    margin-left: 8px;
+    width: 0px;
+  }
+
+  span.swiper-pagination-bullet {
+    background-color: #999999;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  span.swiper-pagination-bullet-active {
+    background-color: #ffba08;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+}
