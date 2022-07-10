@@ -1,5 +1,6 @@
 import { Flex, Image } from "@chakra-ui/react";
-
+import NextLink from "next/link";
+import { Link as ChakraLink } from "@chakra-ui/react";
 export function Header() {
   return (
     <Flex
@@ -10,11 +11,15 @@ export function Header() {
       align="center"
       justify="center"
     >
-      <Image
-        src="imgs/Logo.png"
-        h={["10px", "22px", "30px", "35px", "40px"]}
-        alt="world trip logotipo"
-      />
+      <NextLink href="/" passHref>
+        <ChakraLink _hover={{ textDecoration: "none" }}>
+          <Image
+            src="imgs/Logo.png"
+            h={["10px", "22px", "30px", "35px", "40px"]}
+            alt="world trip logotipo"
+          />
+        </ChakraLink>
+      </NextLink>
     </Flex>
   );
 }
